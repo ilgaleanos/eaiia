@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\author{Ivan Leonardo Galeano S.}
+\title{Estudio Estadística}
+
+% ------------------------------------------------------------------------------
+% Definitions (do not change this)
+% ------------------------------------------------------------------------------
+\newtheorem{defi}{\textbf{Definición}}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\makeatletter							% Title
+\def\printtitle{%						
+	{\centering \@title\par}}
+\makeatother									
+
+\makeatletter							% Author
+\def\printauthor{%					
+	{\centering \large \@author}}				
+\makeatother							
+
+% ------------------------------------------------------------------------------
+% Metadata (Change this)
+% ------------------------------------------------------------------------------
+\title{	\normalsize \textsc{Notas de clase} 	% Subtitle of the document
+	\\[2.0cm]													% 2cm spacing
+	\HRule{0.5pt} \\										% Upper rule
+	\LARGE \textbf{\uppercase{Estadística para ingenieros y científicos}}	% Title
+	\HRule{2pt} \\ [0.5cm]								% Lower rule + 0.5cm spacing
+	\normalsize \today									% Todays date
+}
+
+\author{
+	Ivan Leonardo Galeano Saavedra\\	
+	Estudio personal\\	
+	Bogotá, Colombia\\
+	\texttt{ilgaleanos@gmail.com} \\
+}
+
+
+
+\begin{document}
+\thispagestyle{empty}
+\printtitle
+\vfill
+\printauthor
+
+\chapter{Muestreo y estadística descriptiva}
+
+\section*{Introducción}
+
+La recopilación y el análisis de datos son fundamentales en la ciencia y en la ingeniería; con esto los científicos descubre los principios que gobiernan el mundo físico y los ingenieros aprenden como diseñar nuevos productos y procesos.\\
+
+La \textbf{estadística} se dedica a la recopilación, el análisis y la interpretación de datos con incertidumbre. Los \textbf{métodos} de la estadística permiten que los ingenieros y científicos diseñen experimentos válidos y obtengan conclusiones confiables a partir de los datos obtenidos.\\
+
+La \textbf{idea básica} que yace en todos los métodos estadísticos de análisis de datos es inferir respecto de una población por medio del estudio de una muestra relativamente pequeña elegida de esta. Los métodos que se dedican a obtener conclusiones a partir de los datos constituyen el campo de la \textbf{estadística inferencial}. Los métodos que se dedican a recopilación de datos y a resumir claramente la información son del campo del \textbf{muestreo} y \textbf{estadística descriptiva}
+
+
+\section{Muestreo}
+
+Para entender la naturaleza de una muestra aleatoria simple, piense en una lotería. Imagine que se han vendido diez mil billetes y que se eligen cinco ganadores. ¿Cuál es la manera justa de elegir los ganadores? Es colocar los boletos en un recipiente, mezclarlos y extraer cinco de ellos uno tras otro.
+
+\begin{defi}
+	Una \textbf{población} representa la colección completa de elementos o resultados de la información buscada.
+\end{defi}
+
+\begin{defi}
+	Una \textbf{muestra} constituye un subconjunto de una población, que contiene elementos o resultados que realmente se observan.
+\end{defi}
+
+\begin{defi}
+	Una \textbf{muestra aleatoria simple} de tamaño $ n $ es una muestra elegida por un método en el que la selección de $ n $ elementos de la población tiene la misma probabilidad de formar la muestra, de la misma manera que en una lotería.
+\end{defi}
+
+En algunos casos, es difícil o imposible extraer una muestra de una manera realmente aleatoria. En esta situación, lo mejor que se puede hacer es seleccionar los elementos de la muestra por algún método conveniente. Por ejemplo, imagine que un ingeniero civil acaba de recibir una remesa de mil bloques de hormigón, que pesan aproximadamente 50 libras cada uno. Los bloques se han entregado en una gran pila. Para tomar una muestra aleatoria se requerirá sacar bloques del centro y de la parte inferior, lo que puede ser muy difícil. Por esta razón, el ingeniero puede tomar una muestra tomando diez bloques de la parte superior de la pila. Una muestra tomada así se llama muestra de conveniencia
+
+\begin{defi}
+	Una \textbf{muestra de conveniencia} es aquella que no se extrae por un método aleatorio bien definido.
+\end{defi}
+
+El problema con las muestras de conveniencia es que podrían diferir sistemáticamente de la población en alguna forma. Por esta razón, tales muestras no se deben usar, excepto en situaciones donde \textbf{no es viable} tomar una muestra aleatoria.\\
+
+Algunas personas piensan que una muestra aleatoria simple es garantía de que se refleja perfectamente a la población. Esto \textbf{no es cierto}. Las muestras aleatorias simples siempre son diferentes de sus poblaciones en algunos aspectos y en algunas ocasiones podrían ser considerablemente diferentes. Dos muestras diferentes de la misma población también diferirán entre si. Este fenómeno se conoce como \textbf{variación de muestreo}. Esta última constituye una de las razones por la cual los experimentos científicos tienen resultados diferentes cuando se repiten, a pesar de que las condiciones parezcan idénticas.
+
+\begin{defi}
+	Una \textbf{población tangible} es aquella que está conformada por elementos físicos reales. Estas poblaciones son siempre finitas.
+\end{defi}
+
+\begin{defi}
+	Una muestra aleatoria simple puede consistir de valores obtenidos en un proceso en condiciones experimentalmente idénticas. En este caso, la muestra proviene de una población que consta de todos los valores posibles que se han observado. A este tipo de población se le denomina \textbf{población conceptual}.
+\end{defi}
+
+Los métodos estadísticos algunas veces se usan para mostrar que un conjunto de datos \textit{no} representa necesariamente una muestra aleatoria simple. Un método simple, pero efectivo para detectar esta condición, es realizar una gráfica con las observaciones en el orden en que se tomaron. Una muestra aleatoria simple no debe mostrar ningún patrón o tendencia obvia. Sin embargo antes de tomar esa decisión, es aún importante pensar acerca del proceso que produjo esos datos, ya que pueden haber cuestiones que no son evidentes en la gráfica.\\
+
+\subsubsection{Independencia}
+
+\begin{defi}
+	Los elementos de una muestra son \textbf{independientes} si el conocimiento de algunos de los valores de los elementos no ayuda a predecir los valores de los otros.
+\end{defi}
+
+Los elementos en una muestra aleatoria simple se pueden tratar como independientes en muchos casos que se encuentran en la práctica. Ocurre una excepción cuando la población es finita y la muestra consiste de una parte importante (más de $ 5\% $) de la población. 
+
+\begin{defi}
+	Se denomina \textbf{muestreo con remplazo}, si dada una población al tomar un elemento para la muestra, este es reemplazado dentro de la población antes de la toma del siguiente elemento.
+\end{defi}
+
+Con el muestreo con reemplazo la población siempre es exactamente la misma en cada extracción y los elementos muestreados son realmente independientes además que genera cualquier población se comporte como si fuera infinita.\\
+
+
+\subsubsection{Otros métodos de muestreo}
+\begin{defi}
+	En el \textbf{muestreo ponderado} a algunos elementos se les da una mayor oportunidad que a los otros para ser seleccionados.
+\end{defi}
+\begin{defi}
+	En el \textbf{muestreo aleatorio estratificado}, la población se divide en subpoblaciones, llamadas \textbf{estratos} y se extrae una muestra aleatoria simple de cada estrato.
+\end{defi}
+\begin{defi}
+	En el \textbf{muestreo agrupado}, los elementos se extraen de la población en grupos o conglomerados.
+\end{defi}
+	
+Ejemplo del muestreo agrupado. Puede dividir a toda la población (de un país) en diferentes conglomerados (ciudades). Luego, el investigador selecciona una serie de conglomerados en función de su investigación, a través de un muestreo aleatorio simple o sistemático. Luego, de los conglomerados seleccionados (ciudades seleccionadas al azar) el investigador puede incluir a todos los estudiantes secundarios como sujetos o seleccionar un número de sujetos de cada conglomerado a través de un muestreo aleatorio simple o sistemático.
+
+
+\subsubsection{Tipos de experimentos}
+
+\begin{defi}
+	En un experimento de \textbf{una muestra} hay solamente una población de interés y se extrae una muestra de ésta.
+\end{defi}
+
+\begin{defi}
+	En un experimento de \textbf{múltiples muestras} hay dos o más poblaciones de interés y se toma una muestra de cada una de ellas. 
+\end{defi}
+
+Generalmente se emplean múltiples muestras en por ejemplo: selección de dos o mas tipos de materiales
+
+\end{document}           
