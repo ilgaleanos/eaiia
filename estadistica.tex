@@ -53,6 +53,8 @@
 \vfill
 \printauthor
 
+\tableofcontents
+
 \chapter{Muestreo y estadística descriptiva}
 
 \section*{Introducción}
@@ -61,12 +63,11 @@ La recopilación y el análisis de datos son fundamentales en la ciencia y en la
 
 La \textbf{estadística} se dedica a la recopilación, el análisis y la interpretación de datos con incertidumbre. Los \textbf{métodos} de la estadística permiten que los ingenieros y científicos diseñen experimentos válidos y obtengan conclusiones confiables a partir de los datos obtenidos.\\
 
-La \textbf{idea básica} que yace en todos los métodos estadísticos de análisis de datos es inferir respecto de una población por medio del estudio de una muestra relativamente pequeña elegida de esta. Los métodos que se dedican a obtener conclusiones a partir de los datos constituyen el campo de la \textbf{estadística inferencial}. Los métodos que se dedican a recopilación de datos y a resumir claramente la información son del campo del \textbf{muestreo} y \textbf{estadística descriptiva}
-
+La \textbf{idea básica} que yace en todos los métodos estadísticos de análisis de datos es inferir respecto de una población por medio del estudio de una muestra relativamente pequeña elegida de esta. Los métodos que se dedican a obtener conclusiones a partir de los datos constituyen el campo de la \textbf{estadística inferencial}. Los métodos que se dedican a recopilación de datos y a resumir claramente la información son del campo del \textbf{muestreo} y \textbf{estadística descriptiva}\\
 
 \section{Muestreo}
 
-Para entender la naturaleza de una muestra aleatoria simple, piense en una lotería. Imagine que se han vendido diez mil billetes y que se eligen cinco ganadores. ¿Cuál es la manera justa de elegir los ganadores? Es colocar los boletos en un recipiente, mezclarlos y extraer cinco de ellos uno tras otro.
+Para entender la naturaleza de una muestra aleatoria simple, piense en una lotería. Imagine que se han vendido diez mil billetes y que se eligen cinco ganadores. ¿Cuál es la manera justa de elegir los ganadores? Es colocar los boletos en un recipiente, mezclarlos y extraer cinco de ellos uno tras otro.\\
 
 \begin{defi}
 	Una \textbf{población} representa la colección completa de elementos o resultados de la información buscada.
@@ -77,10 +78,10 @@ Para entender la naturaleza de una muestra aleatoria simple, piense en una loter
 \end{defi}
 
 \begin{defi}
-	Una \textbf{muestra aleatoria simple} de tamaño $ n $ es una muestra elegida por un método en el que la selección de $ n $ elementos de la población tiene la misma probabilidad de formar la muestra, de la misma manera que en una lotería.
+	Una \textbf{muestra aleatoria simple} (\textit{MAS}) de tamaño $ n $ es una muestra elegida por un método en el que la selección de $ n $ elementos de la población tiene la misma probabilidad de formar la muestra, de la misma manera que en una lotería.
 \end{defi}
 
-En algunos casos, es difícil o imposible extraer una muestra de una manera realmente aleatoria. En esta situación, lo mejor que se puede hacer es seleccionar los elementos de la muestra por algún método conveniente. Por ejemplo, imagine que un ingeniero civil acaba de recibir una remesa de mil bloques de hormigón, que pesan aproximadamente 50 libras cada uno. Los bloques se han entregado en una gran pila. Para tomar una muestra aleatoria se requerirá sacar bloques del centro y de la parte inferior, lo que puede ser muy difícil. Por esta razón, el ingeniero puede tomar una muestra tomando diez bloques de la parte superior de la pila. Una muestra tomada así se llama muestra de conveniencia
+En algunos casos, es difícil o imposible extraer una muestra de una manera realmente aleatoria. En esta situación, lo mejor que se puede hacer es seleccionar los elementos de la muestra por algún método conveniente. Por ejemplo, imagine que un ingeniero civil acaba de recibir una remesa de mil bloques de hormigón, que pesan aproximadamente 50 libras cada uno. Los bloques se han entregado en una gran pila. Para tomar una muestra aleatoria se requerirá sacar bloques del centro y de la parte inferior, lo que puede ser muy difícil. Por esta razón, el ingeniero puede tomar una muestra tomando diez bloques de la parte superior de la pila. Una muestra tomada así se llama muestra de conveniencia.\\
 
 \begin{defi}
 	Una \textbf{muestra de conveniencia} es aquella que no se extrae por un método aleatorio bien definido.
@@ -88,7 +89,7 @@ En algunos casos, es difícil o imposible extraer una muestra de una manera real
 
 El problema con las muestras de conveniencia es que podrían diferir sistemáticamente de la población en alguna forma. Por esta razón, tales muestras no se deben usar, excepto en situaciones donde \textbf{no es viable} tomar una muestra aleatoria.\\
 
-Algunas personas piensan que una muestra aleatoria simple es garantía de que se refleja perfectamente a la población. Esto \textbf{no es cierto}. Las muestras aleatorias simples siempre son diferentes de sus poblaciones en algunos aspectos y en algunas ocasiones podrían ser considerablemente diferentes. Dos muestras diferentes de la misma población también diferirán entre si. Este fenómeno se conoce como \textbf{variación de muestreo}. Esta última constituye una de las razones por la cual los experimentos científicos tienen resultados diferentes cuando se repiten, a pesar de que las condiciones parezcan idénticas.
+Algunas personas piensan que una muestra aleatoria simple es garantía de que se refleja perfectamente a la población. Esto \textbf{no es cierto}. Las muestras aleatorias simples siempre son diferentes de sus poblaciones en algunos aspectos y en algunas ocasiones podrían ser considerablemente diferentes. Dos muestras diferentes de la misma población también diferirán entre si. Este fenómeno se conoce como \textbf{variación de muestreo}. Esta última constituye una de las razones por la cual los experimentos científicos tienen resultados diferentes cuando se repiten, a pesar de que las condiciones parezcan idénticas.\\
 
 \begin{defi}
 	Una \textbf{población tangible} es aquella que está conformada por elementos físicos reales. Estas poblaciones son siempre finitas.
@@ -106,7 +107,7 @@ Los métodos estadísticos algunas veces se usan para mostrar que un conjunto de
 	Los elementos de una muestra son \textbf{independientes} si el conocimiento de algunos de los valores de los elementos no ayuda a predecir los valores de los otros.
 \end{defi}
 
-Los elementos en una muestra aleatoria simple se pueden tratar como independientes en muchos casos que se encuentran en la práctica. Ocurre una excepción cuando la población es finita y la muestra consiste de una parte importante (más de $ 5\% $) de la población. 
+Los elementos en una muestra aleatoria simple se pueden tratar como independientes en muchos casos que se encuentran en la práctica. Ocurre una excepción cuando la población es finita y la muestra consiste de una parte importante (más de $ 5\% $) de la población.\\
 
 \begin{defi}
 	Se denomina \textbf{muestreo con remplazo}, si dada una población al tomar un elemento para la muestra, este es reemplazado dentro de la población antes de la toma del siguiente elemento.
@@ -116,17 +117,20 @@ Con el muestreo con reemplazo la población siempre es exactamente la misma en c
 
 
 \subsubsection{Otros métodos de muestreo}
+
 \begin{defi}
 	En el \textbf{muestreo ponderado} a algunos elementos se les da una mayor oportunidad que a los otros para ser seleccionados.
 \end{defi}
+
 \begin{defi}
 	En el \textbf{muestreo aleatorio estratificado}, la población se divide en subpoblaciones, llamadas \textbf{estratos} y se extrae una muestra aleatoria simple de cada estrato.
 \end{defi}
+
 \begin{defi}
 	En el \textbf{muestreo agrupado}, los elementos se extraen de la población en grupos o conglomerados.
 \end{defi}
 	
-Ejemplo del muestreo agrupado. Puede dividir a toda la población (de un país) en diferentes conglomerados (ciudades). Luego, el investigador selecciona una serie de conglomerados en función de su investigación, a través de un muestreo aleatorio simple o sistemático. Luego, de los conglomerados seleccionados (ciudades seleccionadas al azar) el investigador puede incluir a todos los estudiantes secundarios como sujetos o seleccionar un número de sujetos de cada conglomerado a través de un muestreo aleatorio simple o sistemático.
+Ejemplo del muestreo agrupado. Puede dividir a toda la población (de un país) en diferentes conglomerados (ciudades). Luego, el investigador selecciona una serie de conglomerados en función de su investigación, a través de un muestreo aleatorio simple o sistemático. Luego, de los conglomerados seleccionados (ciudades seleccionadas al azar) el investigador puede incluir a todos los estudiantes secundarios como sujetos o seleccionar un número de sujetos de cada conglomerado a través de un muestreo aleatorio simple o sistemático.\\
 
 
 \subsubsection{Tipos de experimentos}
@@ -139,6 +143,83 @@ Ejemplo del muestreo agrupado. Puede dividir a toda la población (de un país) 
 	En un experimento de \textbf{múltiples muestras} hay dos o más poblaciones de interés y se toma una muestra de cada una de ellas. 
 \end{defi}
 
-Generalmente se emplean múltiples muestras en por ejemplo: selección de dos o mas tipos de materiales
+Generalmente se emplean múltiples muestras en por ejemplo: selección de dos o mas tipos de materiales\\
+
+\begin{defi}
+	En muchos experimentos de muestras múltiples las poblaciones se distinguen entre si al cambiar uno o más factores que pueden afectar el resultado. A estos se les llama \textbf{experimentos factoriales}.
+\end{defi}
+
+Por ejemplo medir la dureza ante el impacto de la muesca Charpy V para un importante número de soldaduras. Cada soldadura estaba hecha de uno de dos tipos de metales base y se había medido su dureza a diferentes temperaturas. Éste fue un experimento factorial con dos factores: el metal base y la temperatura.
+
+El \textit{propósito} de un experimento factorial es determinar cómo afecta el resultado al cambiar los niveles de los factores.
+
+\subsubsection{Tipos de datos}
+
+\begin{defi}
+	Cuando se asigna una cantidad numérica a cada elemento de una muestra, al conjunto de valores resultante se llama \textbf{numérico} o \textbf{cuantitativo}. En algunos casos, los elementos de la muestra son puestos en categorías. Entonces los datos son \textbf{categóricos} o \textbf{cualitativos}.
+\end{defi}
+
+\subsubsection{Ejercicios de la sección 1.1}
+
+\begin{enumerate}
+	\item Cada uno de los siguientes procesos implica el muestreo de una población. Defina la población y diga si es tangible o conceptual.
+	\begin{enumerate}
+		\item Se recibe una remesa de pernos de un distribuidor. Para verificar si es aceptable respecto de la fuerza de corte, un ingeniero selecciona diez pernos uno tras otro, del recipiente para probarlos.
+		
+		\textbf{R:} Población tangible: remesa de pernos.\\
+		
+		\item la resistencia de cierto resistor se mide cinco veces con el mismo óhmetro.
+		
+		\textbf{R:} Población conceptual: mediciones del resistor.\\
+		
+		\item Un estudiante de postgrado que se especializa en ciencia ambiental forma parte de un equipo de estudio que está evaluando el riesgo para la salud humana de cierto contaminante presente en el agua de la llave en su pueblo. Una parte del proceso de evaluación implica calcular la cantidad de tiempo que las personas que viven en este pueblo está en contacto con el agua de la llave. El estudiante convence a los residentes del pueblo para que lleven una agenda mensual, detallando la cantidad de tiempo que están en contacto con el agua de la llave día a día.
+	
+		\textbf{R:} Población tangible: personas en contacto con el agua.\\
+		
+		\item  Se hacen ocho soldaduras con el mismo proceso y se mide la fuerza en cada una de ellas.
+		
+		\textbf{R:} Población conceptual: soldaduras a medir\\
+		
+		\item  Un ingeniero responsable del control de calidad tiene que calcular el porcentaje de piezas fabricadas defectuosas en determinado día. A las 2:30 de la tarde muestrea las últimas 100 piezas fabricadas.
+		
+		\textbf{R:} Población tangible: piezas fabricadas.\\
+	\end{enumerate}
+	
+	\item Si usted quisiera calcular la altura media de todos los estudiantes en una universidad, ¿cuál de las siguientes estrategias de muestreo sería la mejor? ¿Por qué? Observe que ninguno de los métodos son realmente muestras aleatorias simples.
+	
+	\begin{enumerate}
+		\item Medir la estatura de 50 estudiantes que se encuentran en el gimnasio durante el juego de basquetbol en la escuela.
+		\item Medir la estatura de todos los especialistas en ingeniería.
+		\item Medir la estatura de de los estudiantes, eligiendo el primer nombre de cada página de la guía telefónica del campus universitario\\
+		
+		\textbf{R:} El que menos sesgo genera es el tercer método, esto debido a que es poco probable que el primer nombre de cada página de la guía telefónica del campus este relacionado directamente con un grupo poblacional específico. No es una \textit{MAS} puesto que posee un método sistemático al ser el primero de cada página y en un nuevo muestreo las población no tiene posibilidad de variar.
+	\end{enumerate}
+	
+	\item Verdadero o falso:
+	\begin{enumerate}
+		\item Una \textit{MAS} garantiza que refleja exactamente a la población de la que se extrajo
+		
+		\textbf{R:} Falso.\\
+		
+		\item Una \textit{MAS} está libre de cualquier tendencia sistemática en diferir de la población de la que se extrajo
+		
+		\textbf{R:} Verdadero.
+	\end{enumerate}
+	
+	\item Una ingeniera de control de calidad extrae una \textit{MAS} de $ 50 $ anillos de un lote de varios miles. Mide el espesor de cada uno y descuble que 45 de ellos, $ 90\% $, cumple con cierta especificación. ¿Cuál de los siguientes enunciados es correcto?
+	
+	\begin{enumerate}
+		\item La proporción de anillos en el lote que cumple con la especificación probablemente es igual a $ 90\% $.
+		
+		\textbf{R:} Correcto.
+		
+		\item La proporción de anillos en el lote completo que cumple con la especificación probablemente está cerca de representar $ 90\% $, pero probablemente no es igual al total.
+		
+		\textbf{R:} Incorrecto.
+	\end{enumerate}
+	
+	\item Se ha usado...
+	
+\end{enumerate}
 
 \end{document}           
