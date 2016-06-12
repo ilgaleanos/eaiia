@@ -1,0 +1,175 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Ivan Leonardo}{Galeano Saavedra}
+%\title{Matemático}                               % optional, remove / comment the line if not wanted
+\address{Calle 161 N 8b - 30, 2do piso}{Bogotá D.C.}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{316 302 5922}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{526 5461}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{ilgaleanos@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+	%-----       resume       ---------------------------------------------------------
+	\makecvtitle
+	
+	\small{Matemático de la \textit{Universidad Nacional de Colombia}. Programador apasionado por la ciencia y la tecnología. Poseo sólidas bases en el área de la computación y algoritmos de diversa índole. Soy una persona creativa, responsable, apasionada por la computación, los lenguajes y el aprendizaje.	
+	
+	\section{Datos personales.}
+	
+	\vspace{6pt}
+	
+	\begin{itemize}
+		
+		\item{\cventry{Enero de 2008}{Expedido en Bogotá D.C.}{Documento de identificación}{1.020.748.321}{}{}}
+		
+		\vspace{6pt}
+		
+		\item{\cventry{Bogotá D.C.}{Ciudad de procedencia}{Fecha de nacimiento}{06 de Enero 1990}{}{}}
+		
+		
+	\end{itemize}
+	
+	\section{Trabajos previos.}
+	
+	\vspace{6pt}
+	
+	\begin{itemize}
+		
+		\item{\cventry{Julio de 2014 -- Diciembre 2014}{Tutor de matemáticas y física}{T\&T Teaching and Tutoring.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñe el cargo de tutor de matemáticas en modalidad clases personalizadas, siguiendo la metodología de la institución. Mis labores consistian en preparación, ejecución e informes de clases personalizadas para cada uno de los alumnos asignados en las materias de matemáticas y física nivel bachillerato.}}
+		
+		\vspace{6pt}
+		
+		\item{\cventry{Enero de 2015 -- Julio de 2016}{Desarrollador}{Networks Lab S.A.S.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñé el cargo de desarrollador, diseñando e implementando sofware web utilizando el framework django con optimizaciones en c++ y javascript con jquery, administré servidores linux y bases de datos Postgresql, MySql, mariaDB en la plataforma de AWS, además de brindar asesoría y soporte técnico sobre los productos.}}
+		
+	\end{itemize}
+
+	
+	\section{Educación.}
+	
+	\vspace{5pt}
+	
+	\begin{itemize}
+		
+		\item{\cventry{2009--2014}{Graduado:}{Universidad Nacional de Colombia}{Bogotá}{\textit{Matemático}}{}}
+		
+		\item{\cventry{2008}{Último Cursado:}{Universidad Distrital}{Bogotá}{\textit{ Primer semestre de matemáticas }}{}}  % arguments 3 to 6 can be left empty
+		
+		\item{\cventry{2006--2007}{Último Cursado:}{Universidad Pontificia Bolivariana}{Medellín}{\textit{ Segundo semestre de filosofía }}{}}  % arguments 3 to 6 can be left empty
+		
+		\item{\cventry{2005}{Graduado:}{Colegio Padre Manyanet}{Medellín}{Bachiller académico}{}}
+			
+		\item{\cventry{1999--2004}{Último cursado:}{Colegio Cristobal Colón}{Bogotá D.C.}{Décimo grado de bachillerato}{}}  % arguments 3 to 6 can be left empty
+		
+	\end{itemize}
+	
+	\vspace{2pt}
+	
+	\section{Habilidades técnicas y personales.}
+	
+	\vspace{6pt}
+	
+	\begin{itemize}
+		
+		\item \textbf{Lenguajes de programación:} Javascript, Python, Go, C++, Java, SQL, HTML5, CSS3, Tex.
+		
+		\vspace{6pt}
+		
+		\item \textbf{Frameworks:} Django, gin.
+		
+		\vspace{6pt}
+		
+		\item \textbf{Habilidades ofimáticas:} La mayoría de los productos de MS Office incluyendo MS excel.
+		
+		\vspace{6pt}
+			
+		\item \textbf{Conocimientos en algoritmos:} Poseo conocimientos en algoritmos genéticos, redes neuronales y algoritmos de cluster.
+	
+		\vspace{6pt}
+		
+		\item \textbf{Sistemas operativos:} Poseo habilidades manipulando sistemas operativos GNU/Linux al igual MS windows. 
+		
+		\vspace{6pt}
+		
+		\item \textbf{Habilidades generales:} Poseo buen trabajo en equipo, gran facilidad de aprendizaje y la capacidad de estructurar ideas para proyectos, además de conocimiento en patrones de diseño y arquitectura de software.
+		
+	\end{itemize}
+
+	
+	\section{Referencias}
+	
+	\vspace{6pt}
+	
+	\begin{itemize}
+		
+		\item{Pendiente de referencias.}
+		
+	\end{itemize}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+	\nocite{*}
+	\bibliographystyle{plain}
+	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+	%-----       letter       ---------------------------------------------------------
+	
+\end{document}
+
+
+%% end of file `template.tex'.
+
+
+ 
