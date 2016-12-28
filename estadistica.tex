@@ -14,6 +14,7 @@
 % Definitions (do not change this)
 % ------------------------------------------------------------------------------
 \newtheorem{defi}{\textbf{Definición}}
+\newtheorem{teo}{\textbf{Teorema}}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
 
@@ -218,8 +219,118 @@ El \textit{propósito} de un experimento factorial es determinar cómo afecta el
 		\textbf{R:} Incorrecto.
 	\end{enumerate}
 	
-	\item Se ha usado...
+	\item Se ha usado durante mucho tiempo un proceso para la fabricación de botellas de plástico y se sabe que $ 10\% $ de estas se encuentra defectuoso. Se está probando un nuevo proceso que, se supone, reduce la proporción de defectos. En una \textit{MAS} de $ 100 $ botellas producidas con el nuevo proceso $ 10 $ estaban defectuosas.
+	
+	\begin{enumerate}
+		\item Uno de los ingenieros sugiere que la prueba demuestra que el nuevo proceso no es mejor que el anterior, ya que la proporción de defectos es la misma. ¿Es ésta una conclusión justificada? Explique.
+		
+		\textbf{R:} No, dado que lo importante es la proporción poblacional, adicionalmente la proporción de defecto es una aproximación que puede ser del $ 9\% $ o más.
+		
+		\item Suponga que hubieran sido solamente nueve las botellas defectuosas de la muestra de $ 100 $. ¿Esto habría probado que el nuevo proceso es mejor? Explique. 
+		
+		\textbf{R:} No, aunque la proporción muestral fue del $ 9\% $ la proporción para la población puede ser igual o superior de $ 10\% $.
+		
+		\item  ¿Qué resultado presenta pruebas más evidentes de que el nuevo proceso es mejor: encontrar nueve botellas defectuosas en la muestra o encontrar dos botellas defectuosas en la muestra?
+		
+		\textbf{R:} Encontrar dos botellas defectuosas.
+	\end{enumerate}
+	
+	\item  Con referencia al ejercicio $ 5 $. Verdadero o falso:
+	
+	\begin{enumerate}
+		\item Si la proporción de defectos en la muestra es menor a $ 10\% $, es confiable concluir que el nuevo proceso es mejor.
+		
+		\textbf{R:} Falso.\\
+		
+		\item Si la proporción de defectos en la muestra es sólo ligeramente menor a $ 10\% $, la diferencia bien podría ser completamente atribuible a la variación del muestreo y no es confiable concluir que el nuevo proceso es mejor.
+
+		\textbf{R:} Verdadero.\\
+		
+		\item Si la proporción de defectos en la muestra en mucho menor a $ 10\% $, es muy poco probable que la diferencia sea atribuible a la variación del muestreo por lo que confiable llegar a la conclusión de que el nuevo proceso es mejor.
+
+		\textbf{R:} Verdadero.\\
+		
+		\item No importa que tan pocos defectos aparezcan en la muestra, el resultado bien podría ser completamente atribuible a la variación del muestreo, por lo que no es confiable concluir que nuevo proceso es mejor.
+		
+		\textbf{R:} Falso.
+	\end{enumerate}
+
+	\item Para determinar si una muestra se debe tratar como \textit{MAS}, ¿qué es más importante un buen conocimiento de la estadística o un buen conocimiento del proceso que produce los datos?
+	
+	\textbf{R:} Un buen conocimiento del proceso que produce los datos.
 	
 \end{enumerate}
+
+\section{Resumen estadístico}
+
+
+Con frecuencia una muestra constituye una larga lista de números. Para ayudar a que las características de una muestra sean evidentes, se calcula el resumen estadístico. Las dos cantidades más usadas en el resumen son la \textbf{media de la muestra} y la \textbf{desviación estándar de la muestra}. La primera indica el centro de los datos y la segunda señala como están distribuidos los datos.
+
+\begin{defi}
+	Sea $ X_1, \ldots, X_n $ una muestra. La \textbf{media muestral} es $$ \overline{X} = \frac{1}{n} \sum_{i=1}^{n} X_i $$
+\end{defi}
+
+\begin{defi}
+	Sea $ X_1, \ldots, X_n $ una muestra. la \textbf{varianza muestral} es la cantidad 
+	$$ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2$$
+	Una formula equivalente que puede ser mas fácil de calcular, es
+	$$ s^2 = \frac{1}{n-1} \bigg{(} - n\overline{X} + \sum_{i=1}^{n} X^2_i \bigg{)}$$
+\end{defi}
+
+\begin{defi}
+	Sea $ X_1, \ldots, X_n $ una muestra. La \textbf{desviación estándar muestral} es la cantidad
+	$$ s = \sqrt{ \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2}$$
+	Una formula equivalente que puede ser mas fácil de calcular, es
+	$$ s = \sqrt{ \frac{1}{n-1} \bigg{(} - n\overline{X} + \sum_{i=1}^{n} X^2_i \bigg{)} }$$
+\end{defi}
+
+\begin{defi}
+	Sea $ X_1, \ldots, X_n $ una muestra y $ s $ la desviación estandar de la muestra. El \textbf{error estándar de la muestra} viene dado por $$ SE = \frac{s}{\sqrt{n}}$$
+\end{defi}
+
+Es natural preguntarse por qué la suma de las desviaciones al cuadrado se divide entre $ n-1 $ en lugar de $ n $. El propósito de calcular la desviación estándar muestral es calcular la cantidad de dispersión en la población de la cual se extrajo aquella. Por tanto, idealmente se calcularían las desviaciones de la media de todos los elementos de la población, en vez de las desviaciones de la media de la muestra. Sin embargo, la media de la población generalmente no se conoce por lo que en su lugar se usa la media de la muestra. Es un hecho matemático que las desviaciones alrededor de la media muestral tienden a ser un poco pequeñas que las desviaciones alrededor de la media poblacional y que al dividir entre $ n-1 $ en vez de $ n $ proporciona la rectificación correcta.
+
+\begin{teo}
+	Sea $ X_1, \ldots, X_n $ una muestra y $ Y_i = a + bX_i $, donde $ a $ y $ b $ son constantes, entonces $ \overline{Y} = a +b\overline{X} $.	
+\end{teo}
+\textbf{Dem:} Se sigue inmediatamente de la definición de media muestral.
+
+\begin{teo}
+	Sea $ X_1, \ldots, X_n $ una muestra y $ Y_i = a + bX_i $, donde $ a $ y $ b $ son constantes, entonces $s^2_Y= b^2 s^2_X$ y $s_Y = |b|s_X$
+\end{teo}
+\textbf{Dem:} Se sigue inmediatamente de la definición de varianza y desviación muestral y del teorema anterior.
+
+
+\subsubsection{Datos atípicos}
+
+A veces una muestra puede contener algunos puntos mucho más grandes o pequeños que el resto. Estos puntos se llaman datos \textbf{atípicos}. Estos datos representan un verdadero problema para los analistas de datos. como consecuencia de lo anterior, cuando las personas ven datos atípicos en sus datos tratan de encontrar una razón o un pretexto para eliminarlos. Sin embargo, un dato atípico, no se debe eliminar, a menos de que se tenga la certeza de que es resultado de un error. Cabe señalar que si una población realmente contiene datos atípicos y on eliminados de la muestra, esta ultima no caracterizará correctamente a la población.
+
+
+\subsubsection{Mediana muestral}
+
+La \textbf{mediana} al igual que la media representa una medida de tendencia central de los datos.
+
+\begin{defi}
+	Si $ n $ números están ordenados del más pequeño al mas grande, Si $ n $ es impar la mediana muestral es el numero en la posición $ \frac{n+1}{2}  $. Si $ n $ es par, la medina muestral representa el promedio de los números en las posiciones $ \frac{n}{2} $ y $\frac{n}{2} + 1$. 
+\end{defi}
+
+\subsubsection{La media recortada}
+
+De la misma manera que la mediana, la \textbf{media recortada} es una medida de tendencia central que se diseño para que no esté afectada por datos atípicos. La media recortada se calcula al arreglar los valores de la muestra en orden, \textit{recortar} un número igual en cada extremo y calcular la media de los restantes. Si se \textit{recorta} el $ p\% $ de los datos de cada extremo, la media resultante se denomina \textit{media recortada un $ p\% $}; las medias más comunes de este tipo son donde $ p $ es $ 5 $, $ 10 $ y $ 20 $. Observe que la mediana se puede pensar como una forma extrema de la media recortada.\\
+
+Debido a que el número de puntos de datos recortados debe ser un numero entero, e muchos casos es imposible recortar los porcentajes exactos que se piden de los datos. Si el tamaño muestral se denota por $ n $ y se desea recortar un $ p\% $, el número de datos a ser recortados es $ \frac{np}{100} $. Si este no es número entero redondeamos al entero más cercano.
+
+\subsubsection{La moda y el rango}
+
+La \textbf{moda} y el \textbf{rango} son resúmenes estadísticos de uso limitado, pero que en ocasiones se aprecian visualmente. La moda muestral es el valor que tiene más frecuencia en una muestra. Si algunos valores tienen una frecuencia igual, cada uno representa una moda. El rango es la diferencia entre los valores mas grandes y más pequeños en una muestra. Es una medida de la dispersión, pero rara vez se usa, porque depende solamente de los valores extremos y no proporciona ninguna información acerca del resto de la muestra.
+
+\subsubsection{Cuartiles}
+
+La mediana divide la muestra a la mitad. Los \textbf{cuartiles} la dividen tanto como sea posible en cuartos. Una muestra tiene tres de aquellos. Existen diferentes formas de calcular cuartiles, pero todas dan aproximadamente el mismo resultado. El método más simple cuando se calcula manualmente es el siguiente: Sea $ n $ el tamaño de la muestra. Ordene los valores de la muestra del más pequeño al más grande. Para encontrar el primer cuartil calcule $ 0.25(n+1) $, si éste es un número entero, entonces el valor de la muestra en esa posición es el primer cuartil de lo contrario sera el promedio de los valores de la muestra en cualquier lado de este valor. el segundo y tercer cuartil resultan de realizar el mismo procedimiento para los valores $ 0.5(n+1) $ y $ 0.75(n+1) $ respectivamente. Note que el segundo cuartil corresponde con el valor de la mediana.
+
+
+\subsubsection{Percentiles}
+
+el $p-$ésimo percentil de una muestra para un número p entre $ 0 $ y $ 100 $, divide a la muestra tanto como sea posible. Existen varios metodos para calcular percentiles pero mencionaremos uno similar al de calcular cuartiles, guiados por el valor de $ p(n+1)/100 $ si este es entero ese valor es el $p-$ésimo percentil de lo contrario es el promedio de los valores de la muestra en cualquier lado de este valor. Los percentiles se usan con frecuencia para interpretar puntajes de exámenes estandarizados. Por ejemplo si a una estudiante se le informa que su puntaje en un examen de ingreso a la universidad está en el $ 84 $avo percentil, esto significa que $ 84\% $ de los estudiantes que presentaron el examen obtuvo puntajes inferiores.
 
 \end{document}           
