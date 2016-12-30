@@ -290,12 +290,12 @@ Con frecuencia una muestra constituye una larga lista de números. Para ayudar a
 
 Es natural preguntarse por qué la suma de las desviaciones al cuadrado se divide entre $ n-1 $ en lugar de $ n $. El propósito de calcular la desviación estándar muestral es calcular la cantidad de dispersión en la población de la cual se extrajo aquella. Por tanto, idealmente se calcularían las desviaciones de la media de todos los elementos de la población, en vez de las desviaciones de la media de la muestra. Sin embargo, la media de la población generalmente no se conoce por lo que en su lugar se usa la media de la muestra. Es un hecho matemático que las desviaciones alrededor de la media muestral tienden a ser un poco pequeñas que las desviaciones alrededor de la media poblacional y que al dividir entre $ n-1 $ en vez de $ n $ proporciona la rectificación correcta.
 
-\begin{teo}
+\begin{teo}\label{LinealidadDeLaMedia}
 	Sea $ X_1, \ldots, X_n $ una muestra y $ Y_i = a + bX_i $, donde $ a $ y $ b $ son constantes, entonces $ \overline{Y} = a +b\overline{X} $.	
 \end{teo}
 \textbf{Dem:} Se sigue inmediatamente de la definición de media muestral.
 
-\begin{teo}
+\begin{teo}\label{LinealidadDeLaDesviacion}
 	Sea $ X_1, \ldots, X_n $ una muestra y $ Y_i = a + bX_i $, donde $ a $ y $ b $ son constantes, entonces $s^2_Y= b^2 s^2_X$ y $s_Y = |b|s_X$
 \end{teo}
 \textbf{Dem:} Se sigue inmediatamente de la definición de varianza y desviación muestral y del teorema anterior.
@@ -332,5 +332,53 @@ La mediana divide la muestra a la mitad. Los \textbf{cuartiles} la dividen tanto
 \subsubsection{Percentiles}
 
 el $p-$ésimo percentil de una muestra para un número p entre $ 0 $ y $ 100 $, divide a la muestra tanto como sea posible. Existen varios metodos para calcular percentiles pero mencionaremos uno similar al de calcular cuartiles, guiados por el valor de $ p(n+1)/100 $ si este es entero ese valor es el $p-$ésimo percentil de lo contrario es el promedio de los valores de la muestra en cualquier lado de este valor. Los percentiles se usan con frecuencia para interpretar puntajes de exámenes estandarizados. Por ejemplo si a una estudiante se le informa que su puntaje en un examen de ingreso a la universidad está en el $ 84 $avo percentil, esto significa que $ 84\% $ de los estudiantes que presentaron el examen obtuvo puntajes inferiores.
+
+
+\subsubsection{Resumen estadístico para datos categóricos}
+
+Con datos categóricos, a cada elemento de la muestra se le asigna una categoría en lugar de un valor numérico. Es necesario trabajar con datos categóricos y resúmenes numéricos. Los dos mas comunes son las \textbf{frecuencias} y las \textbf{proporciones muestrales} (algunas veces llamadas \textbf{frecuencias relativas}). La frecuencia para una categoría dada es sólo el número de elementos de la muestra que cae dentro de esa categoría. La proporción muestral es la frecuencia dividida entre el tamaño de la muestra.
+
+
+\subsubsection{Ejercicios para la sección 1.2}
+
+\begin{enumerate}
+	\item Verdadero o falso: para cualquier lista de números, la mitad de ellos estará debajo de la media.\\
+	\textbf{R:} Falso. Considere una muestra de valores iguales.\\
+	
+	\item ¿Es la media de la muestra siempre el valor que ocurre con mas frecuencia?. Si es así, explique por qué. Si no, dé un ejemplo.\\
+	\textbf{R:} No, considere la muestra $ 1,1,3,3 $ la media es $2$ y no aparece en la muestra.\\
+	
+	\item ¿Es la media de la muestra siempre igual a uno de los valores que está en la muestra?. Si es así, explique por qué. Si no, dé un ejemplo.\\
+	\textbf{R:} No, considere la muestra $ 1,1,3,3 $ la media es $2$ y no aparece en la muestra.\\
+	
+	\item ¿La mediana de la muestra siempre es igual a uno de los valores de la muestra? Si es así, explique por qué. Si no, dé un ejemplo.\\
+	\textbf{R:} No, considere la muestra $ 1,1,3,3 $ la mediana es $2$ y no aparece en la muestra.\\
+	
+	\item Encuentre un tamaño de la muestra para el cual la mediana siempre sea igual a uno de los valores de la muestra.
+	\textbf{R:} $ \{2 k - 1 \} $ donde $ k \in \mathbb{Z}^+ $.\\
+	
+	\item En cierta compañía, cada trabajador recibió un aumento de $ \$50 $ por semana. ¿Cómo afecta esto la media de los sueldos? ¿y la desviación estándar de los sueldos?\\
+	\textbf{R:} Si $ \overline{x} $ es la media de los sueldos semanales entonces por el \textbf{teorema \ref{LinealidadDeLaMedia}} la nueva media esta dada por $\overline{x} + 50 $. De forma similar por el \textbf{teorema \ref{LinealidadDeLaDesviacion}} la desviación estándar no cambia.\\
+	
+	\item En otra compañía, cada trabajador recibió un aumento de $ 5\% $. ¿Cómo afecta esto la media de los sueldos? ¿y la desviación estándar de los sueldos?\\
+	\textbf{R:} Si $ \overline{x} $ es la media de los sueldos semanales entonces por el \textbf{teorema \ref{LinealidadDeLaMedia}} la nueva media esta dada por $1.05\overline{x}$. De forma similar si $s$ es la desviación estándar por el \textbf{teorema \ref{LinealidadDeLaDesviacion}} la nueva está dada por es $ 1.05s $.\\
+	
+	\item El puntaje de Apgar se usa para evaluar reflejos y respuestas de recién nacidos. A cada bebé un profesional de la medicina le asigna un puntaje y los valores posibles son enteros entre cero y diez. Se toma una muestra de mil bebés nacidos en cierto condado y el numero con cada puntaje es el siguiente:\\
+	
+	\begin{tabular}{c|ccccccccccc}
+	Puntaje	& 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ 
+		\hline 
+	bebés & 1 & 3 & 2 & 4 & 25 & 35 & 198 & 367 & 216 & 131 & 18 \\ 
+	\end{tabular} 
+	
+	\begin{enumerate}
+		\item Encuentre la media de la muestra de los puntajes Apgar.\\
+		\textbf{R:} $$ \overline{x} = 0,001\sum_{i=0}^{10} Puntaje_i \cdot Bebes_i = 7.138  $$
+
+		\item  Encuentre la desviación estándar de la muestra de los puntajes Apgar.\\
+		\textbf{R:} $$ s_x = 0,001\sum_{i=0}^{10} Puntaje_i \cdot Bebes_i = 7.138  $$
+		
+	\end{enumerate}
+\end{enumerate}
 
 \end{document}           
