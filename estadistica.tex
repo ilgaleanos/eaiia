@@ -281,7 +281,7 @@ Con frecuencia una muestra constituye una larga lista de números. Para ayudar a
 	Sea $ X_1, \ldots, X_n $ una muestra. La \textbf{desviación estándar muestral} es la cantidad
 	$$ s = \sqrt{ \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \overline{X})^2}$$
 	Una formula equivalente que puede ser mas fácil de calcular, es
-	$$ s = \sqrt{ \frac{1}{n-1} \bigg{(} - n\overline{X} + \sum_{i=1}^{n} X^2_i \bigg{)} }$$
+	$$ s = \sqrt{ \frac{1}{n-1} \bigg{(} - n\overline{X}^2 + \sum_{i=1}^{n} X^2_i \bigg{)} }$$
 \end{defi}
 
 \begin{defi}
@@ -376,8 +376,53 @@ Con datos categóricos, a cada elemento de la muestra se le asigna una categorí
 		\textbf{R:} $$ \overline{x} = 0,001\sum_{i=0}^{10} Puntaje_i \cdot Bebes_i = 7.138  $$
 
 		\item  Encuentre la desviación estándar de la muestra de los puntajes Apgar.\\
-		\textbf{R:} $$ s_x = 0,001\sum_{i=0}^{10} Puntaje_i \cdot Bebes_i = 7.138  $$
+		\textbf{R:} $$ s_x = \sqrt{\frac{1}{999}\bigg{(} - 1000\cdot7.138^2 + \sum_{i=0}^{10} Bebes_i \cdot Puntaje_i^2 \bigg{)} } = 1.311 $$
 		
+		\item Encuentre la mediana muestral de los puntajes de Apgar.\\
+		\textbf{R:} Calculamos el promedio de las posiciones $500$ y $ 501 $. Como los puntajes están ordenados de $ 0 $ a $ 10 $, tenderemos que hacer sumas de la cantidad de bebes $ 1+3+2+4+25+35+198 = 268 + 367 = 635$ de donde la mediana es $ 7 $.
+		
+		\item  ¿Cuál es el primer cuartil de los puntajes?\\
+		\textbf{R:} Esta ubicado en la posición $ 0.25(1000+1) = 250.25 $. Tendremos que es el promedio del valor en la posición $ 250 $ y $ 251 $, ademas recordemos que $ 1+3+2+4+25+35+198 = 268 $ de donde el primer cuartil es $ 6 $
+		
+		\item ¿Qué proporción de puntajes es más grande que la media?\\
+		\textbf{R:} Sabemos que $ 216 +131 +18 = 365$ de donde $ 36.5\% $ son más grandes que la media.
+		
+		\item ¿Qué proporción de puntajes es mayor en una desviación estándar de la media?\\
+		\textbf{R:} Sabemos que $ 7.138 + 1.311 = 8.449$ de donde son los bebes de $ 9 $ y $ 10 $ es decir $ 149 $ son mayores por lo tanto es de $ 14.9\% $
+ 
+		\item ¿Qué proporción de puntajes está dentro de una desviación estándar de la media?\\
+		\textbf{R:} Sabemos que $ 7 $ y $ 8 $ están incluidos, así que $ 7.138 - 1.311 = 5.827 $, estaría incluido el puntaje $ 6 $ es decir $ 781 $ bebes o lo que es el $ 78.1\% $
+	\end{enumerate}
+
+	\item Una clase de estadística con 40 estudiantes realizó una prueba. El puntaje posible más alto era de cuatro puntos. Diez estudiantes obtuvieron cuatro puntos, doce lograron tres puntos, ocho alcanzaron dos puntos, seis se beneficiaron con un  punto y cuatro obtuvieron cero puntos. Calcule la media, la mediana y la desviación estándar de los puntajes.
+	
+	\textbf{R:} $$ \overline{x} = 0.025\sum_{i=0}^{4} i \cdot NumEstudiantes_{puntaje_i} = 0.025 \cdot 98 = 2.45 $$
+	
+	$$ Mediana = 0.5 ( Posicion_{20} + Posicion_{21} ) = 0.5 ( 3 + 3 ) = 3 $$
+	
+	$$ s_x = \sqrt{\frac{1}{39} \bigg{(} - 40\cdot 2.45^2 + \sum_{0}^{4} NumEstudiantes_{puntaje_i} \cdot puntaje_i^2 \bigg{)}} =  1.299 $$
+	
+	\item Otra clase de estadística de 60 estudiantes realizó la misma prueba. En esta clase, 15 estudiantes obtuvieron cuatro puntos, 18 alcanzaron tres puntos, 12 lograron dos puntos, 9 obtuvieron un punto y 6 resultaron con cero puntos. Calcule la media, mediana y desviación estándar de los puntajes.
+	
+	\textbf{R:} $$ \overline{x} = \frac{1}{60} \sum_{i=0}^{4} i \cdot NumEstudiantes_{puntaje_i} = \frac{147}{60} = 2.45  $$
+	
+	$$ Mediana = 0.5 ( Posicion_{30} + Posicion_{31} ) = 0.5 ( 3 + 3 ) = 3 $$
+	
+	$$ s_x = \sqrt{\frac{1}{59} \bigg{(} - 60\cdot 2.45^2 + \sum_{0}^{4} NumEstudiantes_{puntaje_i} \cdot puntaje_i^2 \bigg{)}} =  1.294 $$
+	
+	
+	\item En otra clase de estadística, el número total de estudiantes no se conoce. En esta clase, $ 25\% $ obtuvo cuatro puntos, $ 30\% $ alcanzó tres puntos, $ 20\% $ se benefició con dos puntos, $ 15\% $ logró un punto y $ 10\% $ resultó con dos cero puntos.
+	
+	\begin{enumerate}
+		\item ¿Es posible calcular la media de los puntajes para esta clase? Si es así, calcúlela. Si no, explique por qué.\\
+		\textbf{R:} $$ \frac{1}{k}\bigg{(}\frac{25}{100}k\cdot4 + \frac{30}{100}k\cdot3 + \frac{20}{100}k\cdot2 + \frac{15}{100}k\cdot1 + \frac{10}{100}k\cdot0 \bigg{)} = 2.45$$
+		
+		\item ¿Es posible calcular la mediana de los puntajes para esta clase? Si es así, calcúlela. Si no, explique por qué.\\
+		\textbf{R:} Sin importar el tamaño de la muestra $ k $ la posición $ k/2 $ y $ 1+ k/n $ las cuales están contenidas en una vecindad del $ 50\% $ de la misma, contenida en el porcentaje que alcanzó $ 3 $ puntos.
+		
+		\item ¿Es posible calcular la desviación estándar de los puntajes para esta clase? Si es así, calcúlela. Si no, explique por qué.\\
+		\textbf{R:} Asumiendo que calculamos, la desviación sesgada, dividimos por $k$. Si no, depende estrictamente del tamaño de la muestra. Luego de unos pasos se puede ver que
+		$$s = \sqrt{-\overline{x}^2 + \frac{25}{100}16 +\frac{30}{100}9 +\frac{20}{100}4 + \frac{15}{100} } = 1.283 $$
 	\end{enumerate}
 \end{enumerate}
 
