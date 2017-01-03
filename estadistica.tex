@@ -424,6 +424,97 @@ Con datos categóricos, a cada elemento de la muestra se le asigna una categorí
 		\textbf{R:} Asumiendo que calculamos, la desviación sesgada, dividimos por $k$. Si no, depende estrictamente del tamaño de la muestra. Luego de unos pasos se puede ver que
 		$$s = \sqrt{-\overline{x}^2 + \frac{25}{100}16 +\frac{30}{100}9 +\frac{20}{100}4 + \frac{15}{100} } = 1.283 $$
 	\end{enumerate}
+
+	\item Cada uno de los $ 16 $ estudiantes mide la circunferencia una pelota de tenis por cuatro métodos diferentes, éstos fueron:
+	
+	Método A: Estimar la circunferencia a simple vista.
+	
+	Método B: Medir el diámetro con una regla y después calcular la circunferencia.
+	
+	Método C: Medir la circunferencia con una regla y cuerda.
+	
+	Método D: Medir la circunferencia haciendo rodar la pelota a lo largo de la regla.
+	
+	Los resultados (en cm) son los siguientes, en orden creciente para cada método:
+	
+	Método A: 18.0, 18.0, 18.0, 20.0, 22.0, 22.0, 22.5, 23.0, 24.0, 24.0, 25.0, 25.0, 25.0, 25.0, 26.0, 26.4.
+	
+	Método B: 18.8, 18.9, 18.9, 19.6, 20.1, 20.4, 20.4, 20.4, 20.4, 20.5, 21.2, 22.0, 22.0, 22.0, 22.0, 23.6.
+	
+	Método C: 20.2, 20.5, 20.5, 20.7, 20.8, 20.9, 21.0, 21.0, 21.0, 21.0, 21.0, 21.5, 21.5, 21.5, 21.5, 21.6.
+	
+	Método D: 20.0, 20.0, 20.0, 20.0, 20.2, 20.5, 20.5, 20.7, 20.7, 20.7, 21.0, 21.1, 21.5, 21.6, 22.1, 22.3.
+	
+	\begin{enumerate}
+		\item Calcule la media de las mediciones para cada método.\\
+		\textbf{R:} Método A = 22,74; Método B = 20.7, Método C = 21.01, Método D = 20.81
+		
+		\item Calcule la mediana de las mediciones para cada método.\\
+		\textbf{R:} Método A = 23.5, Método B = 20.4, Método C = 21.0, Método D = 20.7
+		
+		\item Calcule la media recortada a $ 20\% $ para cada método.\\
+		\textbf{R:} Recortaremos $ \lfloor 16\cdot20/100 \rfloor = 3$ datos de cada extremo. Método A = 23.25, Método B = 20.7, Método C = 21.04, Método D = 20.69
+		
+		\item Calcule el primer y tercer cuartil para cada método.\\
+		\textbf{R:} Sabemos que $ .25(16+1) = 4.25 $ y $ .75(16+1) = 12.75 $.
+		
+		\textbf{Pimer Cuartil:} Método A = 21, Método B = 19.85, Método C = 20.75, Método D = 20.1
+		
+		\textbf{Tercer Cuartil:} Método A = 25, Método B = 22, Método C = 21.5, Método D = 21.3
+		
+		\item Calcule la desviación estándar de las mediciones para cada método.
+		\textbf{R:}
+		
+		$$ s_{M_A} = \sqrt{\frac{1}{16+1}\bigg{(}-16\cdot22.74^2 + 8400.21\bigg{)}} = 2.727 $$
+		
+		$$ s_{M_B} = \sqrt{\frac{1}{16+1}\bigg{(}-16\cdot20.7^2 + 6883.32\bigg{)}} = 1.271 $$
+		
+		$$ s_{M_C} = \sqrt{\frac{1}{16+1}\bigg{(}-16\cdot21.01^2 + 7067.04\bigg{)}} = 0.504 $$
+		
+		$$ s_{M_D} = \sqrt{\frac{1}{16+1}\bigg{(}-16\cdot 20.81^2 + 6934.73\bigg{)}} = 0.586 $$
+		
+		\item ¿En qué método es la desviación estándar más grande? ¿Por qué se esperaría que este método tenga la desviación estándar más grande?.
+		\textbf{R:} En el Método A, se esperaría ya que los datos no fueron capturados por un método fiable, se espera cambien abruptamente generando una mayor dispersión de los mismos.
+		
+		\item Sin que nada cambie ¿es preferible usar un método de medición que tenga una desviación estándar más pequeña o más grande? ¿O no importa? Explique\\
+		\textbf{R:} Tratándose del estudio de métodos de medición la desviación estándar pequeña nos da un claro indicio de mayor precisión en las muestras indicando un mejor método. Aunque no es una regla infalible de elección  puesto que los de a simple vista pueden opinar todos el mismo valor haciendo que la desviación sea cero y no por eso es el mejor método.
+		
+		\end{enumerate}
+	
+	\item Con referencia al ejercicio anterior. 
+	\begin{enumerate}
+		\item Si las mediciones para cada uno de métodos se convirtieran a pulgadas (1 pulgada = 2.54cm), ¿cómo afectaría esto a la media? ¿a la mediana? ¿y los cuartiles? ¿Y la desviación estándar?\\
+		\textbf{R:} Todo se escala con el valor de la conversión en este caso se multiplica por 2.54.
+		
+		\item Si los estudiantes midieran nuevamente la pelota, usando una regla marcada en pulgadas, ¿Los efectos sobre la media, la mediana, los cuartiles y la desviación estándar serían los mismos que los del inciso anterior? Explique.\\
+		\textbf{R:} No serían exactamente los mismos dado que los datos recolectados serian diferentes al muestreo anterior.
+	\end{enumerate}
+
+	\item Una lista de diez número tiene una media de 20, una mediana de 18 y una desviación estandar de 5, el número mas grande de la lista es 39.27. Accidentalmente, este número se cambia a 392.7
+	\begin{enumerate}
+		\item ¿Cuál es el valor de la media después del cambio?\\
+		\textbf{R:} la nueva media es de 55.343.
+		\item ¿Cuál es el valor de la mediana despues del cambio?\\
+		\textbf{R:} La mediana se mantiene en 18.
+		\item ¿Cuál es el valor de la desviación estándar después del cambio?\\
+		\textbf{R:} Supongamos $ x_i $ son las mediciones de la muestra y sabemos que  $$ s = \sqrt{\frac{1}{11}\bigg{(}-10\cdot20^2+ \sum x_i^2  \bigg{)}} = 5 $$ de donde obtenemos $$ \sum x_i^2 = 4275 $$ por lo tanto la nueva suma de cuadrados es $$ \sum y_i^2 = \sum x_i^2 - 39.27^2 + 392.7^2 = 4275 -1542.1329 + 154213.29 $$
+		por lo tanto $$ \sum y_i^2 = 156790.6875 $$
+		Así $$ s = \sqrt{\frac{1}{11}\bigg{(}-10\cdot55.343^2+ \sum y_i^2  \bigg{)}} = 107.09478 $$
+	\end{enumerate}
+
+	\item ¿Por qué nadie habla del cuarto cuartil? ¿O lo hacen?\\
+	\textbf{R:} No existe un cuarto cuartil, existen tres cuartiles que dividen los datos en cuatro grupos iguales.
+	
+	\item En cada uno de los siguientes conjuntos de datos, diga si el dato atípico parece ser atribuible a un error, o si se podrá suponer correcto.
+	\begin{enumerate}
+		\item Una roca se pesa cinco veces. Las lecturas en gramos son 48.5, 47.2, 4.91, 49.5, 46.3.\\
+		\textbf{R:} Es atribuido a un error es una variación muy amplia para el peso de una roca sin modificaciones de la misma.
+		
+		\item Un sociólogo muestrea cinco familias en cierto pueblo y registra sus ingresos anuales. Los ingresos son $ \$34000 $, $ \$ 57000 $, $ \$13000 $, $ \$1200000 $, $ \$62000 $\\
+		\textbf{R:}  Los datos se puede suponer correctos.
+	\end{enumerate}
+	
+	
 \end{enumerate}
 
 \end{document}           
