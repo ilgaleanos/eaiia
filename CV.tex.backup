@@ -28,9 +28,9 @@
 % personal data
 \name{Ivan Leonardo}{Galeano Saavedra}
 %\title{Matemático}                               % optional, remove / comment the line if not wanted
-\address{Calle 155A N 8-57}{Bogotá D.C.}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{Calle 161 N 8b - 30, 2do piso}{Bogotá D.C.}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{316 302 5922}                   % optional, remove / comment the line if not wanted
-%\phone[fixed]{526 5461}                    % optional, remove / comment the line if not wanted
+\phone[fixed]{526 5461}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{ilgaleanos@gmail.com}                               % optional, remove / comment the line if not wanted
 %\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
@@ -55,7 +55,7 @@
 	%-----       resume       ---------------------------------------------------------
 	\makecvtitle
 	
-	\small{Matemático de la \textit{Universidad Nacional de Colombia}. Poseo sólidas bases en el área de la computación y algoritmos de diversa índole. Soy una persona autodidacta, creativa, responsable, entusiasta de la computación, los lenguajes de programación y el machine learning. Poseo amplia experiencia en patrones de diseño de software, diseño e implementación de arquitecturas para productos de altísima concurrencia, con las premisas de que sean de fácil mantenimiento, seguros y escalables.
+	\small{Matemático de la \textit{Universidad Nacional de Colombia}. Programador apasionado por la ciencia y la tecnología. Poseo sólidas bases en el área de la computación y algoritmos de diversa índole. Soy una persona creativa, responsable, apasionada por la computación, los lenguajes y el aprendizaje.	
 	
 	\section{Datos personales.}
 	
@@ -63,7 +63,7 @@
 	
 	\begin{itemize}
 		
-		\item{\cventry{Cédula de ciudadanía}{Expedido en Bogotá D.C.}{Documento de identificación}{1.020.748.321}{}{}}
+		\item{\cventry{Enero de 2008}{Expedido en Bogotá D.C.}{Documento de identificación}{1.020.748.321}{}{}}
 		
 		\vspace{6pt}
 		
@@ -78,21 +78,15 @@
 	
 	\begin{itemize}
 		
-	%	\item{\cventry{Julio de 2014 -- Diciembre 2014}{Tutor de matemáticas y física}{T\&T Teaching and Tutoring.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñe el cargo de tutor de matemáticas en modalidad clases personalizadas, siguiendo la metodología de la institución. Mis labores consistian en preparación, ejecución e informes de clases personalizadas para cada uno de los alumnos asignados en las materias de matemáticas y física nivel bachillerato.}}
+		\item{\cventry{Julio de 2014 -- Diciembre 2014}{Tutor de matemáticas y física}{T\&T Teaching and Tutoring.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñe el cargo de tutor de matemáticas en modalidad clases personalizadas, siguiendo la metodología de la institución. Mis labores consistian en preparación, ejecución e informes de clases personalizadas para cada uno de los alumnos asignados en las materias de matemáticas y física nivel bachillerato.}}
 		
 		\vspace{6pt}
 		
-		\item{\cventry{Enero de 2015 -- Julio de 2016}{Desarrollador}{Networks Lab S.A.S.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñé el cargo de desarrollador, diseñando e implementando sofware web utilizando el framework django con optimizaciones en c++ y javascript con jquery, administré servidores linux y bases de datos PostgreSQL, MySql, mariaDB en la plataforma de AWS, además de brindar asesoría y soporte técnico sobre los productos.}}
+		\item{\cventry{Enero de 2015 -- Julio de 2016}{Desarrollador}{Networks Lab S.A.S.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñé el cargo de desarrollador, diseñando e implementando sofware web utilizando el framework django con optimizaciones en c++ y javascript con jquery, administré servidores linux y bases de datos Postgresql, MySql, mariaDB en la plataforma de AWS, además de brindar asesoría y soporte técnico sobre los productos.}}
 		
 		\vspace{6pt}
 		
-		\item{\cventry{Agosto de 2016 -- Agosto de 2017}{Desarrollador de software}{PHI Axioma Innovación S.A.S.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñé el cargo de desarrollador, diseñando e implementando sofware web utilizando diversos frameworks como: django, gin (lenguaje go), javascript con jquery, react, inferno.js y webpack. Administré servidores linux y bases de datos PostgreSQL en la plataforma de AWS, además de brindar asesoría y soporte técnico sobre los productos.}}
-		
-		\vspace{6pt}
-	
-		\item{\cventry{Agosto de 2017 -- Actualidad}{Líder de desarrollo}{Team Sourcing}{Bogotá D.C.}{}{\vspace{3pt} Desempeño el cargo de líder de desarrollo y modelador de arquitecturas. Tengo un alto dominio en Docker, Kubernetes y en general toda la nube de GCP. Planteo metodologías orientadas a procesos que requieran alta disponibilidad y escalabilidad con uso de buenas prácticas tanto de seguridad como de rendimiento. Diseño e implemento software utilizando una gran variedad de lenguajes pero principalmente Java con Servlets, Node con express y Python con Django. Adicionalmente elaboro documentación y manuales de uso de las herramientas empleadas.}}
-		
-		\vspace{6pt}
+		\item{\cventry{Agosto de 2016 -- Actualidad}{Desarrollador de software}{PHI Axioma Innovación S.A.S.}{Bogotá D.C.}{}{\vspace{3pt} Desempeñé el cargo de desarrollador lider de proyectos, diseñando e implementando sofware web utilizando diversos frameworks como: django con optimizaciones en c++, gin (lenguaje go), javascript con jquery, react, inferno.js y grunt. Administré servidores linux y bases de datos Postgresql en la plataforma de AWS, además de brindar asesoría y soporte técnico sobre los productos.}
 		
 	\end{itemize}
 
@@ -102,7 +96,6 @@
 	\vspace{5pt}
 	
 	\begin{itemize}
-		\item{\cventry{2018}{Certificación:}{Pontificia Universidad Javeriana}{Bogotá}{\textit{Citizen Data Scientists}}{}}
 		
 		\item{\cventry{2009--2014}{Graduado:}{Universidad Nacional de Colombia}{Bogotá}{\textit{Matemático}}{}}
 		
@@ -111,6 +104,8 @@
 		\item{\cventry{2006--2007}{Último Cursado:}{Universidad Pontificia Bolivariana}{Medellín}{\textit{ Segundo semestre de filosofía }}{}}  % arguments 3 to 6 can be left empty
 		
 		\item{\cventry{2005}{Graduado:}{Colegio Padre Manyanet}{Medellín}{Bachiller académico}{}}
+			
+		\item{\cventry{1999--2004}{Último cursado:}{Colegio Cristobal Colón}{Bogotá D.C.}{Décimo grado de bachillerato}{}}  % arguments 3 to 6 can be left empty
 		
 	\end{itemize}
 	
@@ -121,25 +116,29 @@
 	\vspace{6pt}
 	
 	\begin{itemize}
-		\item \textbf{Tecnologias:} Docker, kubernetes, Firebase, Redis, Mongo, SQL, git y gran parte de la infraestructura de GCP.
 		
-		\item \textbf{Lenguajes de programación:} Java, Python, Javascript, Go, C/C++, SQL, HTML5, CSS3, SASS, Tex.
+		\item \textbf{Lenguajes de programación:} Javascript, Go, Python, C/C++, Java, SQL, HTML5, CSS3, SASS, Tex.
 		
 		\vspace{6pt}
 		
-		\item \textbf{Frameworks y librerias:} Kubectl, gcloud, Keras, Scikit-Learn, Django, gin (Go), React, Webpack, Servlets, Express.
+		\item \textbf{Frameworks:} Django (Python), gin (Go), React (JS), Inferno (JS), Grunt (js).
+		
+		\vspace{6pt}
+		
+		\item \textbf{Habilidades ofimáticas:} La mayoría de los productos de MS Office incluyendo MS excel y LibreOficce.
 		
 		\vspace{6pt}
 			
-		\item \textbf{Conocimientos en algoritmos:} Poseo conocimientos en algoritmos genéticos, redes neuronales, algoritmos de cluster y de Machine Learning en general. Adicional a implementaciones usando las herramientas de Google en el campo de inteligencia artificial.
+		\item \textbf{Conocimientos en algoritmos:} Poseo conocimientos en algoritmos genéticos, redes neuronales, algoritmos de cluster y de Machine Learning en general.
 	
 		\vspace{6pt}
 		
-		\item \textbf{Sistemas operativos:} Poseo habilidades en el uso de sistemas operativos GNU/Linux al igual MS windows. 
+		\item \textbf{Sistemas operativos:} Poseo habilidades manipulando sistemas operativos GNU/Linux al igual MS windows. 
 		
 		\vspace{6pt}
 		
-		\item \textbf{Habilidades desarrollo:} Poseo buen trabajo en equipo, gran facilidad de aprendizaje y la capacidad de estructurar ideas para proyectos, además de amplia experiencia y conocimiento en patrones de diseño y arquitectura de software para sitios de alta concurrencia que sean facilmente escalables.
+		\item \textbf{Habilidades generales:} Poseo buen trabajo en equipo, gran facilidad de aprendizaje y la capacidad de estructurar ideas para proyectos, además de conocimiento en patrones de diseño y arquitectura de software.
+		
 	\end{itemize}
 
 	
@@ -148,11 +147,8 @@
 	\vspace{6pt}
 	
 	\begin{itemize}
-        \item{Ángela Paola Duquino S. } Contacto: 3204340173.
 		
-		\item{Elizabeth Estefanía Montoya P. } Contacto: 3158046034.
-		 
-		\item{Celmira Saavedra. } Contacto: 3134361234.
+		\item{Pendiente de referencias.}
 		
 	\end{itemize}
 	
